@@ -9,13 +9,33 @@
         <meta name="keywords" content="random, color, scheme, generator">
         <!-- link to stylesheet -->
         <link rel="stylesheet" href="./styles.css">
+        <!-- Inter font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz@0,14..32;1,14..32&display=swap" rel="stylesheet">
         <!-- Title -->
         <title>Color Scheme Generator</title>
     </head>
     <body>
         
         <header>
+            <!-- User form for generating color scheme -->
+            <form>
 
+                <input id="color-picker" name="color-picker" type="color" aria-label="Pick a seed color"/>
+                <select name="scheme-mode" id="scheme-mode-select" aria-label="Please choose a scheme mode">
+                    <option value="">--Please choose a scheme mode--</option>
+                    <option value="monochrome">Monochrome</option>
+                    <option value="monochrome-dark">Monochrome-dark</option>
+                    <option value="monochrome-light">Monochrome-light</option>
+                    <option value="analogic">Analogic</option>
+                    <option value="complement">Complement</option>
+                    <option value="analogic-complement">Analogic-complement</option>
+                    <option value="Triad">Triad</option>
+                </select>
+
+                <button value="submit">Generate color scheme</button>
+            </form>
         </header>
         <main>
 
