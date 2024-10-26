@@ -43,10 +43,13 @@ form select, form button {
     border-radius: 6px;
 }
 
+form select, option {
+    background-color: #1F2937;
+    color: #D5D4D8;
+}
+
 form select {
     font-size: 1rem;
-    background-color: inherit;
-    color: #D5D4D8;
     border: 1px solid #E5E5E5;
     padding: 0.5625em 0.8125em;
 }
