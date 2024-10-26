@@ -31,12 +31,16 @@ form {
     gap: 0 0.8em;
     justify-content: center;
 }
+form input, form select, form button {
+    cursor: pointer;
+}
 
 form input {
     flex-basis: 60px;
     color: #E5E5E5;
     min-height: 40px;
 }
+
 
 form select, form button {
     width: fit-content;
@@ -56,10 +60,18 @@ form select {
 
 form button {
     font-size: 0.75rem;
-    border: 1px solid #3D4B;
+    border: 1px solid #3D4B60;
     background-color: #3D4B60;
     color: #FFF;
     padding: 1.083em 0.9167em;
+}
+
+form button:hover{
+    background-color: #303C4C;
+}
+
+form button:active {
+    background-color: #212a35;
 }
 
 @media (max-width: 527px){
